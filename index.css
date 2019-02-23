@@ -98,6 +98,10 @@ nav a {
 .projects-container{
   padding-bottom: 50px;
 }
+.projects-app{
+  padding-top: 5%;
+  padding-bottom: 20%;
+}
 img.about-me-pic{
   margin-top: 12px;
   float: left;
@@ -108,9 +112,9 @@ img.float-right{
   float:right;
   padding-bottom: 15px;
 }
-.bio-container{
+.bio-container, .contact-container{
   padding-left: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 4%;
   background-color: #f3f3f3fd;
 }
 nav *{
@@ -125,7 +129,10 @@ nav *{
 .projects-container{
   width:90%;
 }
-
+.contact-info{
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
 .row {
   /* max-width: 1000px; */
   width: 100%;

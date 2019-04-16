@@ -28,7 +28,7 @@
                 <span class="intro-p">software engineer</br>world traveler</br> car enthusiast</span>
             </div>
         </section>
-        <section class="row bio" id="aboutme">
+        <section class="row bio row" id="aboutme">
             <div class="col-12 bio-container">
                 <h2>About Me</h2></br>
                 <img src="./pictures/bear.jpg" class="about-me-pic col-6" alt="picture of dangerous bear">
@@ -39,20 +39,41 @@
             </div>
         </section>
         <section class="row" id="projects">
-            <div class="col-12 projects-container">
+            <div class="projects-container">
                 <h2>Projects</h2>
                 <ul>
-                    <li class="projects-app">
-                        
-                        <img src="./pictures/screencapture-localhost-8080-2019-02-18-21_08_30.png" class="bookmark-app-pic col-4 float-right col-3" alt="">
-                        <h3>Bookmark App</h3>
-                        <p>The bookmark app utilizes a api based server. 
-                            It contains the functionality to add, edit and delete bookmarks. 
-                            Each bookmark contains a title, description and a link. The 
-                            application is mobile friendly and will adjust itself depending on 
-                            the device it is viewed on.
-                        </p>
+                    <li class="projects-app col-12">
+                        <div>
+                        <a href="./caskMates.html">
+                            <img src="./pictures/Caskmates-search-add.png" alt="caskmate add screen" class='project-pic col-4'>
+                        </a>
+                        </div>
+                        <h3 class='project-title'>Caskmates</h3>
+                        <div class='live-link'>
+                            <a href="https://robinkhiv-caskmate-app.now.sh">Live </a>  <span> | </span> 
+                            <a href='https://github.com/RobinKhiv/CaskMates-Client'>GitHub </a> 
+                        </div>
+                        <p class='project-text'>Cask Mates is an interactive application where you can browse through a dataset 
+                        of whiskeys and select specific whiskeys that tailor to your specific taste palates.
+                        Once you are able to find a whiskey that appeals to your taste buds you can add them to a choice of three lists that can by your Favorites, Wish or Already Tried list.</p>
+                        <p><strong>Technologies Used:</strong> HTML, CSS, Javascript, React, Node.js, Express, PostgreSQL</p> 
                     </li>
+                    <li class="projects-app col-12">
+                            <div>
+                            <a href="./caskMates.html">
+                                <img src="./pictures/starsearchfound.png" alt="star search found character" class='project-pic float-right col-4'>
+                            </a>
+                            </div>
+                            <h3 class='project-title'>Star Search</h3>
+                            <div class='live-link'>
+                                <a href="https://star-search.robinkhiv.now.sh/">Live </a>  <span> | </span> 
+                                <a href='https://github.com/RobinKhiv/Star-Search'>GitHub </a> 
+                            </div>
+                            <p >A simple application that you can search for your favorite Star Wars reference. 
+                                This neat application will gather matching data from a public Star Wars API and will tether the 
+                                information back to your screen.</p>
+                            <p class="text-left"><strong>Technologies Used:</strong> HTML, CSS, React</p> 
+                        </li>
                 </ul>
             </div>
         </section>

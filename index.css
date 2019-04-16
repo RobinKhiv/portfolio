@@ -26,7 +26,7 @@ li{
 nav {
   margin-left: auto;
   margin-right: auto;
-  background-color: #226597;
+  background-color: #000000;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,7 +38,7 @@ nav {
 li a, .brand{
   font-size: 13px;
   font-weight: 400;
-  color: #87c0cd;
+  color: #4592af;
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   text-decoration: none;
@@ -56,7 +56,7 @@ li p, .bio-p{
   font-size: 16px;
   line-height: 24px;
   font-family: 'Quattrocento', serif;
-  color: #00263E;
+  color: #000000;
 }
 .project-text{
   overflow: visible;
@@ -90,16 +90,13 @@ div p{
   margin-bottom: 10px;
 }
 h3{
-  color: #113f67;
+  color: #226089;
 }
 h2, h1{
-  color: #113f67;
+  color: #226089;
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight: 600;
-}
-h1{
-  color: #226597;
 }
 h3{
   padding-top: 2%;
@@ -132,7 +129,7 @@ img.float-right{
 .bio-container, .contact-container{
   padding-left: 20px;
   padding-bottom: 4%;
-  background-color: #f3f9fb;
+  background-color: #e3c4a8;
 }
 nav *{
   display:inline-block;

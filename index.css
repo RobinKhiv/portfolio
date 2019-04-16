@@ -26,7 +26,7 @@ li{
 nav {
   margin-left: auto;
   margin-right: auto;
-  background-color:#C9C9C9;
+  background-color: #226597;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,7 +38,7 @@ nav {
 li a, .brand{
   font-size: 13px;
   font-weight: 400;
-  color: #3E2400;
+  color: #87c0cd;
   font-family: 'Oswald', sans-serif;
   font-weight: 600;
   text-decoration: none;
@@ -52,7 +52,7 @@ li a, .brand{
 li p, .bio-p{
   text-align: left;
   padding-left: 15px;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-size: 16px;
   line-height: 24px;
   font-family: 'Quattrocento', serif;
@@ -89,14 +89,17 @@ div p{
   margin-bottom: auto;
   margin-bottom: 10px;
 }
+h3{
+  color: #113f67;
+}
 h2, h1{
-  color: #3E2400;
+  color: #113f67;
   font-family: 'Oswald', sans-serif;
   font-size: 40px;
   font-weight: 600;
 }
 h1{
-  color: #00568A;
+  color: #226597;
 }
 h3{
   padding-top: 2%;
@@ -124,11 +127,12 @@ img.about-me-pic{
 img.float-right{
   float:right;
   padding-bottom: 15px;
+  padding-top: 5em;
 }
 .bio-container, .contact-container{
   padding-left: 20px;
   padding-bottom: 4%;
-  background-color: #f3f3f3fd;
+  background-color: #f3f9fb;
 }
 nav *{
   display:inline-block;

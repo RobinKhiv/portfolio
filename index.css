@@ -7,8 +7,7 @@ body{
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
-  /* font-family: "Open Sans",
-  sans-serif;  */
+
 }
 .about-me-container{
   background-size: cover;
@@ -18,6 +17,7 @@ body{
   padding-top: 90px;
 }
 main {
+
   text-align: center;
 }
 li{
@@ -31,7 +31,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  height: 30px;
+  height: 2em;
   display: flex;
   align-items: center;
 }
@@ -45,14 +45,14 @@ li a, .brand{
   letter-spacing: 1px;
   font-weight: 700;
   transform: scaleX(1.4);
-  /* transform-origin: 0 0; */
   padding-left: 10px;
 }
-
+div a{
+  padding-left: 0px;
+}
 li p, .bio-p{
   text-align: left;
   padding-left: 15px;
-  /* overflow: hidden; */
   font-size: 16px;
   line-height: 24px;
   font-family: 'Quattrocento', serif;
@@ -60,6 +60,10 @@ li p, .bio-p{
 }
 .project-text{
   overflow: visible;
+  margin-top: 1px;
+}
+.projects-app{
+  margin-top: 29px;
 }
 .intro-p{
   padding-bottom: 60px;
@@ -70,11 +74,10 @@ img.icon-about-me {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  /* margin-top: 80px; */
   margin-bottom: 20px;
 }
 .project-pic{
-  padding-top: 3em;
+  margin-top: 2em;
 }
 .live-link{
   display:block;
@@ -92,6 +95,10 @@ div p{
 h3{
   color: #226089;
 }
+h2{
+  margin-top: 20px;
+  margin-bottom: 2px;
+}
 h2, h1{
   color: #226089;
   font-family: 'Oswald', sans-serif;
@@ -99,7 +106,8 @@ h2, h1{
   font-weight: 600;
 }
 h3{
-  padding-top: 2%;
+ margin-top: 1.5px;
+ margin-bottom: 1.2px;
 }
 ul {
   padding-left: 0;
@@ -108,13 +116,13 @@ nav a {
   margin: 5px;
   margin-left: 10px;
 }
-.projects-container{
-  padding-bottom: 50px;
-}
-.projects-app{
-  padding-top: 1%;
-  padding-bottom: 3em;
-}
+/* .projects-container{
+  padding-bottom: 0px;
+} */
+/* .projects-app{
+  
+  margin-bottom: 1em;
+} */
 img.about-me-pic{
   margin-top: 12px;
   float: left;
@@ -123,8 +131,8 @@ img.about-me-pic{
 }
 img.float-right{
   float:right;
-  padding-bottom: 15px;
-  padding-top: 5em;
+  padding-bottom: 0px;
+  /* padding-top: 5em; */
 }
 .bio-container, .contact-container{
   padding-left: 20px;
@@ -188,9 +196,7 @@ padding: 0px;
   visibility: hidden;
   opacity: 0;
 }
-/* .text-left{
-  text-align: left;
-} */
+
 
 .caskmate-link-container:hover + .caskmatetext {
   visibility: visible;

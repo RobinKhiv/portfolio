@@ -59,7 +59,7 @@ li p, .bio-p{
   font-family: 'Quattrocento', serif;
   color: #000000;
 }
-.project-text,p{
+.project-text{
   overflow: auto;
   margin-top: 1px;
 }
@@ -77,9 +77,9 @@ img.icon-about-me {
   border-radius: 50%;
   margin-bottom: 20px;
 }
-.project-pic{
+/* .project-pic{
   margin-top: 2em;
-}
+} */
 .live-link{
   display:block;
 }
@@ -169,6 +169,7 @@ nav *{
   margin: 0 auto 10px auto;
   height: 100%;
   display: flex;
+  min-height: 100%;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -209,7 +210,9 @@ padding: 0px;
   padding-left: 1.04166666%;
   padding-right: 1.04166666%;
 }
-
+.techUsed{
+  display: inline-flex;
+}
 .col-3, .col-4, .col-6, .col-12, .col-7  {
   width: 100%;
   min-height: 100%;
@@ -220,13 +223,17 @@ padding: 0px;
   .col-3 {
     width: 25%;
   }
-
-  .col-4 {
-    width: 47%;
+  .project-text.QQueued{
+    overflow: visible;
   }
-  
-  .col-6 {
+  .col-4 {
     width: 50%;
+  }
+  .project-pic{
+    padding-top: 2.3em;
+  }
+  .col-6 {
+    width: 45%;
   }
   .col-7{
     width: 65%

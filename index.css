@@ -8,7 +8,6 @@ body{
   margin-left: auto;
   margin-right: auto;
   margin:0px;
-
 }
 .about-me-container{
   background-size: cover;
@@ -23,20 +22,34 @@ main {
 li{
   list-style: none;
 }
-nav {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #000000;
-  position: fixed;
+header{
+  background-color: #000000; 
   top: 0;
   left: 0;
   right: 0;
-  height: 2em;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav[role="navigation"].row{
+  margin-bottom: 0;
+  max-width: 1280px;
+}
+nav {
   display: flex;
-  align-items: center;
+  padding: .1em;
+}
+.navBar-left{
+  margin-left: 1em;
+}
+.navbar-anchors{ 
+  display: flex;
+  text-decoration: none;
+  flex-direction: row;
+  margin: 0 .3em 0 auto;
 }
 li a, .brand{
-  font-size: 15px;
+  font-size: 1.2em;
   font-weight: 400;
   color: #4592af;
   font-family: 'Oswald', sans-serif;
@@ -45,14 +58,17 @@ li a, .brand{
   letter-spacing: 1px;
   font-weight: 700;
   transform: scaleX(1.4);
-  padding-left: 10px;
+  margin-right: .7em;
 }
 div a{
   padding-left: 0px;
 }
+.bio-p{
+  padding-left: 15px;
+}
 li p, .bio-p{
   text-align: left;
-  padding-left: 15px;
+  
   font-size: 16px;
   line-height: 24px;
   overflow: visible;
@@ -77,9 +93,6 @@ img.icon-about-me {
   border-radius: 50%;
   margin-bottom: 20px;
 }
-/* .project-pic{
-  margin-top: 2em;
-} */
 .live-link{
   display:block;
 }
@@ -110,13 +123,6 @@ h3{
  margin-top: 1.5px;
  margin-bottom: 1.2px;
 }
-ul {
-  padding-left: 0;
-}
-nav a {
-  margin: 5px;
-  margin-left: 10px;
-}
 
 img.about-me-pic{
   margin-top: 12px;
@@ -129,27 +135,11 @@ img.float-right{
   padding-bottom: 0px;
 
 }
-.bio-container, .contact-container{
-  /* padding-left: 20px;
-  background-color: #e3c4a8; */
-}
 #contact, #aboutme{
   background-color: #e3c3a8c5;
 }
 .contact-container{
   bottom: 0;
-}
-nav *{
-  display:inline-block;
-}
-
-.navbar-anchors{ 
-  text-decoration: none;
-  position: absolute;
-  right: 15px;
-}
-.projects-container{
-  /* width:90%; */
 }
 .contact-info{
  float:right;

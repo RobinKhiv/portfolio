@@ -174,7 +174,9 @@ nav *{
   justify-content: center;
   flex-wrap: wrap;
 }
-
+strong{ 
+  margin-right: .4em;
+}
 .row::before,
 .row::after {
   display: table;

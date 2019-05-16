@@ -1,13 +1,18 @@
 *{ 
   box-sizing: border-box;
 }
-
 body{
   color: black;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   margin:0px;
+  
+    padding-top: 20px;
+
+}
+h3{
+  padding-top: 22px;
 }
 .about-me-container{
   background-size: cover;
@@ -27,10 +32,12 @@ header{
   top: 0;
   left: 0;
   right: 0;
+
   position: fixed;
   margin-left: auto;
   margin-right: auto;
 }
+
 nav[role="navigation"].row{
   margin-bottom: 0;
   max-width: 1280px;
@@ -96,9 +103,12 @@ img.icon-about-me {
 .live-link{
   display:block;
 }
-.caskmate-desc{
-  font-size: 14pt;
-  text-align: left;
+h3{
+  font-size: 1.7em;
+}
+.caskmate-desc, .howDoesItWorkText{
+  font-size: 1.1em;
+  /* text-align: left; */
 }
 div p{
   text-align: center;

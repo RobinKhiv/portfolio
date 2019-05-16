@@ -8,17 +8,19 @@
     <title>Document</title>
 </head>
 <body>
-  <nav role="navigation">
-      <a href="./index.html" class="brand">Robin Khiv</a>
-      <div class="navbar-anchors">
-        <ul>
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#design">Layout</a></li>
-          <li><a href="#technology">Technology</a></li>
-          <li><a href="./index.html#projects">Projects</a></li>
-        </ul>
+  <header>
+    <nav role="navigation" class="row">
+      <div class="navBar-left">
+        <a href="./index.html" class="brand">Robin Khiv</a>
       </div>
-  </nav>
+      <ul class="navbar-anchors">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#design">How it Works</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="./index.html#projects">Projects</a></li>
+      </ul>
+    </nav>
+  </header>
   <main role='main'>
     <div class='CaskMates-app row'>
       <section class='col-7' id="overview">
@@ -28,12 +30,14 @@
           Once you are able to find a whiskey that appeals to your taste buds you can add them to a choice of three lists that can by your Favorites, Wish or Already Tried list.</p>
         <a href="https://robinkhiv-caskmate-app.now.sh">Live </a>  <span> | </span> 
         <a href='https://github.com/RobinKhiv/CaskMates-Client'>GitHub </a> 
-        <img src="./pictures/Caskmates-search-add.png" class='caskmate-main col-4' alt="">
+        <img src="./pictures/Caskmate.png" class='caskmate-main col-12' alt="">
       </section>  
       <section class='col-7' id="design">
         <h3>How Does it work?</h3>
-        <p>You start by first searching for your favorite type of whiskey</p>
-        <img src="./pictures/Caskmates-list.png" class='col-4' alt="">
+        <p class="howDoesItWorkText">You start by first searching for your favorite type of whiskey. If you are signed in you are able to store any whiskey a set of three list. When browsing the specific whiskeys
+          you are able to see other users rating and detailed reviews on the whiskey. On your list you are able to move whiskeys from list to list and it happens on the client as well as the server.
+        </p>
+        <img src="./pictures/CaskmateLists.png" class='col-12' alt="">
       </section>
       <section class='col-7' id="technology">
         <h3 id="technology">Technologies Used:</h3> 
@@ -42,7 +46,7 @@
           <li>Back-end: Node.js, Express, PostgreSQL</li>
           <li>hosting: Heroku, Zeit</li>
         </ul>
-        <img src="./pictures/Caskmates-specific-whiskey.png" class='col-4'alt="">
+        <img src="./pictures/CaskmateReview.png" class='col-12'alt="">
       </section>  
     </div>
     </main>

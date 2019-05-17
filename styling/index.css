@@ -120,6 +120,7 @@ img.about-me-pic{
 }
 img.project-pic{
   padding: 0;
+  margin-bottom: 1em;
 }
 img.float-right{
   float:right;
@@ -230,9 +231,7 @@ li p{
   float:right;
   display: none;
 }
-.techUsed{
-  display: inline-flex;
-}
+
 .tech-list{
   padding-left: 0;
   font-size: 1em;

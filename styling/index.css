@@ -210,13 +210,8 @@ li p{
   color: #4592af;
   margin-right: 0;
 }
-.live-link a:hover, li a:hover, .brand:hover{
+.live-link a:hover, li a:hover, .brand:hover,ul.contact-info:hover{
   color: rgb(197, 60, 60);
-  font-size: 1.07em;
-}
-ul.contact-info:hover{
-  color: rgb(197, 60, 60);
-  font-size: 1em;
 }
 .caskmate-desc, .qqueued-desc,.spanish-app-desc, .howDoesItWorkText{
   font-size: 1em;

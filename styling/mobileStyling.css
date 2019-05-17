@@ -1,0 +1,33 @@
+ #icon:hover{
+color: rgb(197, 60, 60);
+}
+#icon:active{
+transform: translateY(.8px);
+}
+#icon{
+margin-right: 1em;
+color: #4592af;
+display: none;
+position: absolute;
+right: 1em;
+top: .2em;
+}
+#navbar-anchors-mobile.active {
+display: block;
+}
+#navbar-anchors-mobile{
+margin-top: 0;
+margin-left: auto;
+display: none;
+}
+@media only screen and (max-width: 680px){
+   ul.navbar-anchors{
+    display: none;
+  }
+  #icon{
+    display: inline;
+  }
+  nav{
+    flex-direction: column;
+  }
+}

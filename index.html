@@ -1,124 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:700|Roboto&display=swap" rel="stylesheet">  
-  <link  rel="stylesheet" type="text/css" href="./styling/index.css">
-  <link rel="icon" type="image/png" href="./favicon.ico" />
-  <title>Robin Khiv</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <script src="https://kit.fontawesome.com/d0589996f6.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="./favicon.ico" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <title>Robin Khiv</title>
 </head>
 <body>
-  <header>
-    <nav role="navigation" class="row">
-      <div class="navBar-left">
-        <a href="#home" class="brand">Robin Khiv</a>
-      </div>
-      <ul class="navbar-anchors">
-        <li><a href="#aboutme">Bio</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-    <main role="main"> 
-      <section class="row about-me" id="home" >
-        <div class="about-me-container col-12">
-          <img class="icon-about-me" src="./pictures/42468036_318551982033935_8963213554064818176_n (1).jpg" alt="about me icon">
-          <h1>Hi, I'm Robin</h1>
-          <span class="intro-p">software engineer<br/>world traveler<br/> car enthusiast</span>
-        </div>
-      </section>
-      <section class="bio" id="aboutme">
-        <div class="row ">
-          <div class="bio-container col-12">
-            <h2>About Me</h2><br/>
-            <div class="bio-content">
-              <img src="./pictures/bear.jpg" class="about-me-pic col-6" alt="picture of dangerous bear">
-              <p class="bio-p">Growing up, I have always had a fascination with how things worked. I would take apart automobile engines just to reassemble it back together again. I loved seeing how various components worked collectively in creating the final product.<br/>
-                My curiosity did not end there, as I took things into the virtual world. I became interested in how web pages worked, and soon that interest blossomed into a passion for coding and solving unique problems.<br/> 
-                On my free time, I enjoy rebuilding classic cars, snowboarding, and exploring a new city. I have been to 14 countries and almost half of the states in America. I also enjoy watching movies and am really captivated in the Marvel Universe.</p>  
+    <header class="header">
+        <nav class="nav">
+            <img class="nav__logo" alt="Robin Logo" id="logo" src="/src/assets/Robin-logo.png"/>
+            <ul class="nav__links">
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--about">About</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#section--project">Projects</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--btn btn--show-modal" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__title">
+            <h1>
+                Hi, I'm <span class="highlight">Robin</span>  
+            </h1>
+            <div class="u-margin-right">
+                <h4>
+                    full-stack developer<br/>world traveler<br/> car enthusiast</span>
+                </h4>
             </div>
-          </div>
+            <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+            <img src="assets/hero.jpg" class="header__img" alt=""/>
         </div>
-      </section>
-      <section class="row" id="projects">
-        <div class="projects-container">
-          <h2>Projects</h2>
-          <p class="imageInstruction">(Click on image for more detail)</p>
-          <ul class="col-12">
-            <li class="projects-app col-12">
-              <h3 class='project-title'>QQueued</h3>
-              <div class='col-12'>
-                <a href="./Projects/qqueued.html">
-                  <img src="./pictures/qqueued-chatroom.png" alt="chatroom" class='project-pic col-6'>
-                </a>
-                <div class='project-desc-container col-6'>
-                  <div class='live-link'>
-                    <a href="https://qqueued-mentoring.now.sh/">Live</a>  <span> | </span> 
-                    <a href="https://github.com/thinkful-ei-armadillo/QQueued-client">GitHub</a> 
-                  </div>
-                  <p class='project-text QQueued'>QQueued is a tool to help deal with communication between students and mentors. 
-                    Students are able to create help tickets through the application or via Slack and are able to track where they are in line. 
-                    There's also a private chatroom and a dynamic queue that is updating in realtime as request continues to transmute.</p>
-                </div>
-                <p class="techUsed"><strong>Technologies Used:</strong> HTML, CSS, Javascript, React(Router, Context), WebSocket, Jest, Node.js, Express, SocketIO, Mocha/Chai, Supertest, PostgreSQL</p> 
-              </div>
-            </li>
-            <li class="projects-app col-12">
-              <h3 class='project-title'>Spaced Repetition</h3>
-              <div class='col-12'>
-                <a href="./Projects/spacedRepetition.html">
-                  <img src="./pictures/Spaced-Translation.png" alt="Spaced Translation" class='project-pic float col-6'>
-                </a>
-                <div class='project-desc-container-spaced'>
-                    <div class='live-link'>
-                      <a href='https://learnspanish.now.sh/'>Live</a>  
-                      <span> | </span> 
-                      <a href='https://github.com/thinkful-ei-armadillo/spaced-repetition-client-robin-irem'>GitHub</a> 
+    </header>
+
+    <main>
+        <section class="section" id="section--about">
+            <div class="section__title">
+                <h2 class="section__description">About</h2>
+                <h3 class="section__header">
+                    Learn about what I can do.
+                </h3>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="about-box">
+                        <div class="about-box__icon">
+                            <i class="fas fa-mobile-alt">
+                            </i>
+                        </div>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Responsive Web Design</h3>
+                        <p class="about-box__text">
+                            Responsive web pages to fit all devices.
+                        </p>
                     </div>
-                    <p>While adopting a new language can be tricky, acquiring certain words in intervals can help you learn more efficiently. Spaced repetition 
-                      is written using a singlely link data structured algorithm. The application tests the user with a word in the desired language. Depending on if the answer is right or wrong, 
-                      the word will be pushed further down the list to a certain amount of spaces.</p>
-                  </div>
-                <p class="text-left techUsed"><strong>Technologies Used:</strong> HTML, CSS, React(Router, Context), WebSocket, JEST,  Node.js, Express.js, Postgresql, socket.io, Slack API, Dev-Tools, Mocha/Chai, Supertest</p> 
-              </div>
-            </li>
-            <li class="projects-app col-12">
-              <h3 class='project-title'>Caskmates</h3>
-                <div class='col-12'>
-                  <a href="./Projects/caskMates.html">
-                    <img src="./pictures/Caskmate.png" alt="caskmate add screen" class='project-pic col-6'>
-                  </a>
-                  <div class='project-desc-container col-6'> 
-                    <div class='live-link'>
-                      <a href="https://robinkhiv-caskmate-app.now.sh">Live</a>  <span> | </span> 
-                      <a href='https://github.com/RobinKhiv/CaskMates-Client'>GitHub</a> 
-                    </div>
-                    <p class='project-text'>Cask Mates is an interactive application where you can browse through a dataset 
-                      of whiskeys and select specific whiskeys that tailor to your specific taste palates.
-                      Once you are able to find a whiskey that appeals to your taste buds you can add them to a choice of three lists that can by your Favorites, Wish or Already Tried list.</p>
-                  </div>
-                  <p class="techUsed"><strong>Technologies Used:</strong> HTML, CSS, Javascript, React, Node.js, Jest, Express, Nodejs, Mocha/Chai, PostgreSQL</p> 
                 </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-  </main>
-  <footer role="contentinfo" id="contact">
-    <div class="row ">
-      <div class="contact-container col-12">
-        <h2 class="contact-title">Contact Me</h2>
-        <ul class="contact-info">
-          <li><a href="https://www.linkedin.com/in/robinkhiv/">LinkedIn</a> </li>   
-          <li><a href="mailto:rkhiv@robinkhiv.com">Email</a></li>   
-          <li><a href="https://github.com/RobinKhiv">Github</a></li> 
+                <div class="col-4">
+                    <div class="about-box">
+                        <div class="about-box__icon">
+                            <i class="fas fa-laptop">
+                            </i>
+                        </div>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Frontend</h3>
+                        <p class="about-box__text">
+                            Experienced in html, css, js or in any modern framework.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="about-box">
+                        <div class="about-box__icon">
+                            <i class="fas fa-server">
+                            </i>
+                        </div>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Backend</h3>
+                        <p class="about-box__text">
+                            Capable of building a functional server.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="about-box">
+                        <div class="about-box__icon">
+                            <i class="fas fa-database">
+                            </i>
+                        </div>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Database</h3>
+                        <p class="about-box__text">
+                            Build and fully normalize relational sql databases.
+                        </p>
+                    </div>
+                </div>
+            </div>     
+        
+            <div class="row">
+                <div class="about">
+                    <figure class="about__shape">
+                        <img src="/src/assets/bear.jpg" alt="bear" class="about__img">
+                        <figcaption class="about__caption">Robin Khiv</figcaption>
+                    </figure>
+                    <div class="about__text">
+                        <h3 class="heading-tertiary u-margin-bottom-small">Get to know me!</h3>
+                        <p class="paragraph">
+                            I have always had a fascination with how things worked. I would take thing apart and reassemble it back together again. As I took things into the virtual world, I became interested in web developement, and soon that interest blossomed into a passion for coding and solving unique problems.
+                        </p>
+                    </div>
+                </div> 
+            </div>                 
+        </section>
+
+        <section class="section" id="section--project">
+            <div class="section__title">
+                <h2 class="section__description">Projects</h2>
+                <h3 class="section__header">
+                  See my work
+                </h3>
+            </div>
+            <div class="projects">
+                <div class="project__gallery">
+                        <figure class="project__gallery_item project__gallery_item--1">
+                            <img src="/src/assets/mentor-lazy.jpg"data-src="/src/assets/mentor.jpg" alt="project image 1" class="lazy_img project__gallery_img project__gallery_img--1">
+                            <figcaption class="project__caption gallery__caption--1 gallery__caption">
+                                QQueued<br/>
+                                <span class="gallery__imagemodal project__gallery--btn btn--show-slider" data-project="1">View</span>
+                                
+                            </figcaption>
+                        </figure>
+
+                    <figure class="project__gallery_item project__gallery_item--2">
+                        <img src="/src/assets/whiskey-lazy.jpg" data-src="/src/assets/whiskey.jpg"alt="project image 2" class="lazy_img  project__gallery_img project__gallery_img--2">
+                        <figcaption class="project__caption gallery__caption--2 gallery__caption">
+                            Caskmate<br/>
+                            <span class="gallery__imagemodal project__gallery--btn btn--show-slider"data-project="2">View</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="project__gallery_item project__gallery_item--3">
+                        <img src="/src/assets/spanish-lazy.jpg"data-src="/src/assets/spanish.jpg" alt="project image 3" class="lazy_img  project__gallery_img project__gallery_img--3">
+                        <figcaption class="project__caption gallery__caption--3 gallery__caption">
+                            Spaced-Translation<br/>
+                            <span class="gallery__imagemodal project__gallery--btn btn--show-slider"data-project="3">View</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="project__gallery_item project__gallery_item--4">
+                        <img src="/src/assets/portfolio-lazy.jpg" data-src="/src/assets/portfolio.jpg" alt="project image 4" class="lazy_img project__gallery_img project__gallery_img--4">
+                        <figcaption class="project__caption gallery__caption--4 gallery__caption">
+                            Portfolio<br/>
+                            <span class="gallery__imagemodal project__gallery--btn btn--show-slider"data-project="4">View</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer role="contentinfo" class="footer" id="contact">
+        <ul class="footer__social">
+            <li><a href="https://github.com/RobinKhiv" class="footer__link"target="_blank" rel="noreferrer noopener"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/robinkhiv/" class="footer__link" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCqorhf015Wh3sJCodMh3l2Q"class="footer__link" target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube"></i></a></li>
         </ul>
-      </div>
+    </footer>
+
+    <div class="contactmodal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <h2 class="contactmodal__header">
+            Contact me <span class="highlight">today!</span>
+        </h2>
+        <ul class="contact">
+            <li>
+                <h3>
+                    <a href="https://www.linkedin.com/in/robinkhiv/" class="contactmodal__link" target="_blank" rel="noreferrer noopener">LinkedIn</a> 
+                </h3>    
+            </li>   
+            <li>
+                <h3>
+                    <a href="mailto:rkhiv@robinkhiv.com" class="contactmodal__link">Email</a>
+                </h3>
+            </li>   
+            <li>
+                <h3>
+                    <a href="https://github.com/RobinKhiv" class="contactmodal__link"target="_blank" rel="noreferrer noopener">Github</a>
+                </h3>
+            </li> 
+        </ul>
     </div>
-  </footer>
+
+    <div class="modal__slider modal__slider--1 hidden">
+        <button class="btn--close-slider"data-slider-modal="1">&times;</button>
+            <div class="slide slide--1"><img src="/src/assets/qqueued-landing1.jpg" alt="Photo 1" /></div>
+            <div class="slide"><img src="/src/assets/qqueued-phone.jpg" alt="Photo 2" /></div>
+            <div class="slide"><img src="/src/assets/queued-tab.jpg" alt="Photo 3" /></div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+        <div class="slider__text">
+            <h2 class="section__description u-margin-bottom-none">QQueued</h2>
+            <a class="slider__link--text" href="https://github.com/thinkful-ei-armadillo/QQueued-client" target="_blank" rel="noreferrer noopener">github &DownArrow;</a>
+            <p class="paragraph">QQueued is a tool to help deal with communication between students and mentors. The application is integrated with slack and a dynamic chatroom </p>
+        </div>
+    </div>
+ 
+    <div class="modal__slider modal__slider--2 hidden">
+        <button class="btn--close-slider"data-slider-modal="2">&times;</button>
+            <div class="slide slide--1"><img src="/src/assets/caskmate-double.jpg" alt="Photo 1" /></div>
+            <div class="slide"><img src="/src/assets/caskmate-tab.jpg" alt="Photo 2" /></div>
+            <div class="slide"><img src="/src/assets/caskmate-mac.jpg" alt="Photo 3" /></div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div> 
+        <div class="slider__text">
+            <h2 class="section__description u-margin-bottom-none">Caskmate</h2>
+            <a class="slider__link--text" href="https://github.com/RobinKhiv/CaskMates-Client" target="_blank" rel="noreferrer noopener">github &DownArrow;</a>
+            <p class="paragraph">Caskmates is an interactive application where you can browse through a dataset 
+                of whiskeys and select specific whiskeys that tailor to your specific taste palates.
+            </p>
+        </div>
+    </div>
+
+    <div class="modal__slider modal__slider--3 hidden">
+        <button class="btn--close-slider"data-slider-modal="3">&times;</button>
+            <div class="slide slide--1"><img src="/src/assets/spaced-mac.jpg" alt="Photo 1" /></div>
+            <div class="slide"><img src="/src/assets/spaced-phone.jpg" alt="Photo 2" /></div>
+            <div class="slide"><img src="/src/assets/spaced-tab.jpg" alt="Photo 3" /></div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div> 
+        <div class="slider__text">
+            <h2 class="section__description u-margin-bottom-none">Spaced-Translation</h2>
+            <a class="slider__link--text" href="https://github.com/thinkful-ei-armadillo/spaced-repetition-client-robin-irem" target="_blank" rel="noreferrer noopener">github &DownArrow;</a>
+            <p class="paragraph">While adopting a new language can be tricky, acquiring certain words in intervals can help you learn more efficiently.</p>
+        </div>
+    </div>
+
+    <div class="modal__slider modal__slider--4 hidden">
+        <button class="btn--close-slider"data-slider-modal="4">&times;</button>
+            <div class="slide slide--1"><img src="/src/assets/portfolio-tab.jpg" alt="Photo 1" /></div>
+            <div class="slide"><img src="/src/assets/portfolio-mac.jpg" alt="Photo 2" /></div>
+            <div class="slide"><img src="/src/assets/portfolio-header.jpg" alt="Photo 3" /></div>
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+        
+        <div class="slider__text">
+            <h2 class="section__description u-margin-bottom-none">Portfolio</h2>
+            <a class="slider__link--text" href="https://github.com/RobinKhiv/portfolio" target="_blank" rel="noreferrer noopener">github &DownArrow;</a>
+            <p class="paragraph">Portfolio is done entirely on vanilla javascript, html and css </p>
+        </div>
+    </div>
+
+    <div class="contactmodal__overlay hidden"></div>
+    <div class="slide__overlay hidden"></div>
+
+    <script src="/src/scripts/script.js"></script>
 </body>
 </html>

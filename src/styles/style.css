@@ -317,7 +317,6 @@ img {
   justify-content: center;
   justify-items: start;
   flex: 1;
-  /* margin-top: 2em; */
   margin-top: -2em;
   transform: translateY(3rem);
 }
@@ -335,7 +334,7 @@ img {
 
   }
   .header__title {
-    margin-top: -5em;
+    margin-top: -11em;
     display: flex;
     flex-direction: column;
   } 

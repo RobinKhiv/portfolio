@@ -14,6 +14,42 @@
     --gutter-horizontal: 6rem;
 }
 
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); 
+  }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); 
+  } 
+}
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); 
+  }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); 
+  } 
+}
+@keyframes slideFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); 
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0); 
+  } 
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -176,7 +212,10 @@ img {
   bottom: 0.3rem;
   z-index: 100;
 }
-
+.btn--animation {
+  animation: slideFromBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
 
 /* Utilities */
 .u-margin-right{
@@ -243,7 +282,6 @@ img {
     display: none;
   }
   .nav{
-    /* padding: 0; */
     width: 100%;
     justify-content: space-between;
   }
@@ -260,6 +298,15 @@ img {
   flex-direction: column;
   align-items: center;
 }
+.header-main {
+  margin-top: 2em;
+  animation-name: slideFromLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+.header-secondary {
+  animation: slideFromRight 1s ease-out; 
+}
 .header__title {
   max-width: 115rem;
   display: grid;
@@ -270,7 +317,8 @@ img {
   justify-content: center;
   justify-items: start;
   flex: 1;
-  margin-top: 2em;
+  /* margin-top: 2em; */
+  margin-top: -2em;
   transform: translateY(3rem);
 }
 .header__img {
@@ -278,17 +326,22 @@ img {
   width: 100%;
   grid-column: 2 / 3;
   grid-row: 1 / span 4;
-  transform: translateY(-5rem); 
+  animation: slideFromBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
 }
 @media only screen and (max-width: 736px) {
   .header__img {
   display: none;
+
   }
   .header__title {
     margin-top: -5em;
     display: flex;
     flex-direction: column;
   } 
+  .header-main{
+    margin-top: 0;
+  }
 }
 
 
@@ -708,3 +761,4 @@ img {
   font-size: 3em;
   color: #4592af;
 }
+

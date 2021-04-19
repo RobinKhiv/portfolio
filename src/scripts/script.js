@@ -7,7 +7,6 @@ const navHeight = nav.getBoundingClientRect().height;
 
 const contactModal = document.querySelector('.contactmodal');
 const contactOverlay = document.querySelector('.contactmodal__overlay');
-const sliderModal = document.querySelector('.modal__slider');
 const sliderOverlay = document.querySelector('.slide__overlay');
 
 const btnCloseContact = document.querySelector('.btn--close-modal');

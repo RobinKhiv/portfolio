@@ -173,7 +173,7 @@ img {
   top: 0.5rem  
 }
 .btn--close-slider {
-  bottom: 0.5rem;
+  bottom: 0.3rem;
   z-index: 100;
 }
 
@@ -456,6 +456,12 @@ img {
   margin: 0 auto;
   overflow: hidden;
   height: 55rem;
+}
+@media only screen and (max-width: 737px) {
+  .modal__slider{
+    height: 50rem;
+    width: 33rem;
+  }
 }
 .slide {
   position: absolute;

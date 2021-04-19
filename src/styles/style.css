@@ -23,8 +23,7 @@
   box-sizing: inherit;
 }
 
-html {
-    box-sizing: border-box;
+html {  
     font-size: 62.5%; 
 }
 @media only screen and (max-width: 75em) {
@@ -39,6 +38,7 @@ html {
 }
 
 body {
+  box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   line-height: 1.6;
@@ -339,10 +339,10 @@ img {
 @media only screen and (max-width: 56.25em) {
   .about {
     width: 100%;
-    padding: 4rem;
-    padding-left: 7rem; 
+    padding: 4rem 2.2rem 4rem 4rem;
   } 
 }
+
 @media only screen and (max-width: 37.5em) {
   .about {
     transform: skewX(0); 
@@ -369,6 +369,12 @@ img {
 @media only screen and (max-width: 37.5em) {
   .about__shape {
     transform: translateX(-3rem) skewX(0); 
+  } 
+}
+@media only screen and (max-width: 22.62em) {
+  .about__shape {
+    width: 10rem;
+    height: 10rem;
   } 
 }
 .about__img {
@@ -448,7 +454,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
-  /* max-width: 100%; */
   background-color: #f1f0f0;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 1000; 
@@ -471,7 +476,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
   transition: transform 1s;
 }
 .slide > img {

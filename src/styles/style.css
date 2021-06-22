@@ -221,6 +221,9 @@ img {
 .u-margin-right{
   margin-right: auto !important;
 }
+.u-margin-right-1{
+  margin-right: 1em !important;
+}
 .u-margin-bottom-small { 
   margin-bottom: 1.5rem !important; 
 }   

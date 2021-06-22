@@ -514,6 +514,7 @@ img {
   margin: 0 auto;
   overflow: hidden;
   height: 55rem;
+  max-width: 675px;
 }
 @media only screen and (max-width: 737px) {
   .modal__slider{
@@ -534,7 +535,7 @@ img {
 .slide > img {
   width: 100%;
   height: 100%;  
-  object-fit: fit;
+  
 }
 .slide--1 {
   z-index: 4;
